@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-"""contains a Rectangle class
-"""
+
+"""0-rectangle: python function that defines an empty class"""
 
 
 class Rectangle:
-	"""defines a rectangle
-	"""
+	"""create an empty REctangle type"""
 	pass
