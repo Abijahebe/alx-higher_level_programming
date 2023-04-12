@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""contains a func that determines if an objs class inherits a class"""
+"""contains a func that determines if an objs class inherits from a class"""
 
 
 def inherits_from(obj, a_clas):
