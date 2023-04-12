@@ -3,10 +3,7 @@
 
 
 class BaseGeometry:
-	 """A class for basic geometric shapes"""
-
-def __init__(self):
-    pass
+	 """defines geometry"""
 
 def area(self):
     """Raises an Exception with the message area() is not implemented"""
