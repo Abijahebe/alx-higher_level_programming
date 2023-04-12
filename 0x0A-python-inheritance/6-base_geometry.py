@@ -2,7 +2,8 @@
 """contains a class that defines BaseGeometry"""
 
 
-class BaseGeometry: """A class for basic geometric shapes"""
+class BaseGeometry:
+	 """A class for basic geometric shapes"""
 
 def __init__(self):
     pass
