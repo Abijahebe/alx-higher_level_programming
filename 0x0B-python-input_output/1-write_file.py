@@ -7,10 +7,10 @@ def write_file(filename="", text=""):
 
 	Args:
 		filename: name of file
-		text: string to write to the file
+		text: string to write to file
 
 	Return:
-		number of chracters written to the file
+		number of chracters written to file
 	"""
 	if filename:
 		with open(filename, 'w', encoding='utf=8') as writefile:
