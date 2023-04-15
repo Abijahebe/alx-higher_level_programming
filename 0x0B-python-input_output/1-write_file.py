@@ -5,5 +5,15 @@
 
 
 def write_file(filename="", text=""):
-	with open(filename, 'w', encoding='utf-8') as f:
-		return f.write(text)
+	"""writes a string to a text file (UTF8)
+
+	Args:
+		filename: name of the file
+		text: string to write file
+
+	Return:
+		number of characters written to file
+	"""
+	if filename:
+	with open(filename, 'w', encoding='utf-8') as writeFile:
+		return writeFile.write(text)
