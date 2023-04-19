@@ -15,7 +15,7 @@ class Base:
 		if id is not None:
 			self.id = id
 		else:
-			type(self).__nb-objects += 1
+			type(self).__nb_objects += 1
 			self.id = type(self).__nb_objects
 
 	@staticmethod
@@ -44,7 +44,7 @@ class Base:
 		if list_objs is None:
 			res = "[]"
 		else:
-			ress = cls.to_json_string(o.to_dictionary() for o in list_objs])
+			ress = cls.to_json_string([o.to_dictionary() for o in list_objs])
 
 		with open(filename, "w", encoding="utf-8") as fd:
 			fd.write(res)
@@ -76,7 +76,7 @@ class Base:
 		if os.path.exists(filename):
 			with open(filename, "r", encoding="utf-8") as fd:
 				json_string = fd.read()
-				list_of)dicts = cls,from_json_string(json_string)
+				list_of_dicts = cls,from_json_string(json_string)
 				res = [cls.create(**attrs) for attrs in list_of_dicts]
 
 				return res
@@ -84,7 +84,7 @@ class Base:
 		return res
 
 	@classmethod
-	def save_to_file_csv(cls), list_objs):
+	def save_to_file_csv(cls, list_objs):
 		"""serializes lists_objs and saves to file"""
 		filename = cls.__name__+ ".cvs"
 		with open(filename, "w", newline="") as csvfile:
@@ -148,7 +148,7 @@ class Base:
 			turt.goto(sq.x, sq.y)
 			turt.down()
 			for i in range(2):
-				turt.forward(sq.width
+				turt.forward(sq.width)
 				turt.left(90)
 				turt.forward(sq.height)
 				turt.left(90)
