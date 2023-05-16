@@ -1,5 +1,5 @@
 -- removes all records with a score <= 5
 -- in the tabl second_table of the database
---hbtn_0c_0 in your MySQL server
+-- hbtn_0c_0 in your MySQL server
 DELETE FROM second_table
 WHERE score <= 5;
