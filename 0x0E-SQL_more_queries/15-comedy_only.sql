@@ -6,5 +6,5 @@ FROM tv_shows AS ts
 		ON ts.id = tsg.show_id
 	INNER OIN tv_genres AS tg
 		ON tsg.genre_id = tg.id
-	WHERE tg.name = "Comedy"
-	ORDER BY ts.title;
+WHERE tg.name = "Comedy"
+ORDER BY ts.title;
