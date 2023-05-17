@@ -3,7 +3,7 @@
 SELECT DISTINCT ts.title
 FROM tv_shows AS ts
 	LEFT JOIN tv_show_genres AS tsg
-		ON ts.id = tsg.shows_id
+		ON ts.id = tsg.show_id
 	LEFT JOIN tv_genres AS tg
 		ON tg.id = tsg.genre_id
 WHERE ts.title NOT IN (
