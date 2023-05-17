@@ -1,4 +1,4 @@
--- lists all genres of a showw in the db
+-- lists all genres of a show in the db
 
 SELECT tg.name
 FROM tv_shows AS ts
