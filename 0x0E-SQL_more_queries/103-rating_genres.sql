@@ -6,7 +6,7 @@ FROM tv_genres AS tg
 		ON tg.id = tsg.genre_id
 	INNER JOIN tv_shows AS ts
 		ON tsg.show_id = ts.id
-	INNER JOIN tv_shows_ratings AS tsr
+	INNER JOIN tv_show_ratings AS tsr
 		ON tsr.show_id = ts.id
 GROUP BY tg.name
 ORDER BY rating DESC;
