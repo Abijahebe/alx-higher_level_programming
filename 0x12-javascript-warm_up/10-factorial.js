@@ -8,5 +8,5 @@ function factorial (n) {
 	return n * factorial(n - 1);
 }
 
-const n = parseInt(proces.argv[2]);
+const n = parseInt(process.argv[2]);
 console.log(factorial(n));
