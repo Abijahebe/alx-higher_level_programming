@@ -7,7 +7,7 @@ if (size) {
 		let j = 0;
 
 		for (; j < size; ++j) {
-			proces.stdout.write('X');
+			process.stdout.write('X');
 		}
 
 		if (j === size) {
